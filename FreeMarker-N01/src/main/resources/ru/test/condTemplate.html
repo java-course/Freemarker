@@ -1,0 +1,32 @@
+[#ftl]
+<html>
+   <head>
+      <title>Conditions test</title>
+   </head>
+   <body>
+      The number is[#if (number > 3)]larger than three[#else] equals or greater tree [/#if]
+
+
+      [#if object??]
+          Object not null
+      [/#if]
+
+      [#if !another??]
+         another is null
+      [/#if]
+
+
+      [#if object?? || another??]
+          Object or another object not null
+      [/#if]
+
+
+
+      [#if object?? && another??]
+          Object and another not null
+      [#else]
+        Object or another is null
+      [/#if]
+
+   </body>
+</html>
